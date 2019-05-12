@@ -1,10 +1,8 @@
-
-
 document.getElementById("bigger-btn").addEventListener("click", () => {
 	document.getElementById("text-in").style.fontSize = "24pt";
 });
 
-let bling = document.getElementById("bling");
+let bling = document.getElementById("bling"); // blinging query selector
 let text_in = document.getElementById("text-in");
 
 function jsUcfirst(string){
@@ -14,7 +12,7 @@ function jsUcfirst(string){
 bling.addEventListener("click", () => {
 	
 	if(bling.checked){
-		text_in.style.fontWeight = "bold";
+		text_in.style.fontWeight = "bold"; //text bol
 		text_in.style.textDecoration = "underline blink overline";
 		text_in.style.color = "green";
 		text_in.style.fontStyle = "italic";
@@ -30,12 +28,12 @@ document.getElementById("snoop_btn").addEventListener("click", () => {
 		text_in.value = jsUcfirst((text_in.value.split(" "))[0]) + (text_in.value.split(" ").slice(1));
 		text_in.value = text_in.value + "!";
 		let a = text_in.value.split(".");
-
+		
 		for(i = 0; i < a.length;i++){
 			a[i] = a[i] + "-izzle";
 		}
 
-		text_in.value = a.join(".");
+		text_in.value = a.join(".");  // join with a value
 	}
 });
 
